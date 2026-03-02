@@ -9,10 +9,13 @@ A collection of browser-based mini games, each as a **single self-contained HTML
 ## Running Games
 
 ```bash
-open <game>.html        # macOS — opens in default browser
+node server.js          # starts server at http://localhost:3000
+PORT=8080 node server.js  # custom port
+open <game>.html        # open a single game directly without the server
 ```
 
-No server, bundler, or install step required.
+`server.js` uses only Node.js built-ins — no `npm install` needed.
+`index.html` is the landing page listing all games.
 
 ## Architecture Pattern
 
